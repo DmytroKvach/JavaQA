@@ -7,7 +7,7 @@ Technologies
 - Java 25
 - IntelliJ IDEA
 - Git
- -GitHub
+- GitHub
 
 Project structure
 

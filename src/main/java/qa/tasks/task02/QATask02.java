@@ -25,9 +25,10 @@ public class QATask02 {
 
     public static void printSumVoidWhile(int start, int stop) {
         int sum = 0;
-        while (start <= stop) {
-            sum = sum + start;
-            start++;
+        int i = start;
+        while (i <= stop) {
+            sum = sum + i;
+            i++;
         }
         System.out.println("sum = " + sum);
     }
