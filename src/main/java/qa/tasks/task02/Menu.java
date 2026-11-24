@@ -28,22 +28,22 @@ public class Menu {
                 printHi();
                 break;
             case 2:
-                printIncrementVoidWhile(10, 20);
+                printIncrementVoidWhile();
                 break;
             case 3:
-                printDecrementVoidWhile(20, 10);
+                printDecrementVoidWhile();
                 break;
             case 4:
-                printSumVoidWhile(1, 15);
+                printSumVoidWhile();
                 break;
             case 5:
-                printIncrementVoidFor(0, 10);
+                printIncrementVoidFor();
                 break;
             case 6:
-                printDecrementVoidFor(20, 10);
+                printDecrementVoidFor();
                 break;
             case 7:
-                printSumVoidFor(0, 0);
+                printSumVoidFor();
                 break;
             case 0:
                 return true;
