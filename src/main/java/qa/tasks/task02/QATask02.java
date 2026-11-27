@@ -6,7 +6,7 @@ public class QATask02 {
 
     public static Scanner sc = new Scanner(System.in);
 
-    public static StartStop readStartStop() {
+    public static StartStop enterStartStop() {
         System.out.println("Enter start");
         int start = sc.nextInt();
 
@@ -21,42 +21,39 @@ public class QATask02 {
     }
 
     public static void printIncrementVoidWhile() {
-        StartStop value = readStartStop();
+        StartStop value = enterStartStop();
         int start = value.start;
         int stop = value.stop;
-        int i = start;
-        while (i < stop) {
-            System.out.println(i);
-            i++;
+        while (start < stop) {
+            System.out.println(start);
+            start++;
         }
     }
 
     public static void printDecrementVoidWhile() {
-        StartStop value = readStartStop();
+        StartStop value = enterStartStop();
         int start = value.start;
         int stop = value.stop;
-        int j = start;
-        while (j > stop) {
-            System.out.println(j);
-            j--;
+        while (start > stop) {
+            System.out.println(start);
+            start--;
         }
     }
 
     public static void printSumVoidWhile() {
-        StartStop value = readStartStop();
+        StartStop value = enterStartStop();
         int start = value.start;
         int stop = value.stop;
         int sum = 0;
-        int i = start;
-        while (i <= stop) {
-            sum = sum + i;
-            i++;
+        while (start <= stop) {
+            sum = sum + start;
+            start++;
         }
         System.out.println("sum = " + sum);
     }
 
     public static void printIncrementVoidFor() {
-        StartStop value = readStartStop();
+        StartStop value = enterStartStop();
         int start = value.start;
         int stop = value.stop;
         for (int i = start; i < stop; i++) {
@@ -65,7 +62,7 @@ public class QATask02 {
     }
 
     public static void printDecrementVoidFor() {
-        StartStop value = readStartStop();
+        StartStop value = enterStartStop();
         int start = value.start;
         int stop = value.stop;
         for (int j = start; j > stop; j--) {
@@ -74,7 +71,7 @@ public class QATask02 {
     }
 
     public static void printSumVoidFor() {
-        StartStop value = readStartStop();
+        StartStop value = enterStartStop();
         int start = value.start;
         int stop = value.stop;
         int sum = 0;

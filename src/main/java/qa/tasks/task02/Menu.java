@@ -57,19 +57,25 @@ public class Menu {
             System.out.println("9. BACK to main menu");
             backChoice = QATask02.sc.nextInt();
 
+            if (backChoice != 9) {
+                System.out.println("Wrong choice");
+            }
+
         } while (backChoice != 9);
         return false;
     }
 
     private static void printMenu() {
-        System.out.println("----------MENU--------");
-        System.out.println("1. printHi");
-        System.out.println("2. printIncrementVoidWhile(start, stop)");
-        System.out.println("3. printDecrementVoidWhile(start, stop)");
-        System.out.println("4. printSumVoidWhile(start, stop)");
-        System.out.println("5. printIncrementVoidFor(start, stop)");
-        System.out.println("6. printDecrementVoidFor(start, stop)");
-        System.out.println("7. printSumVoidFor(start, stop)");
-        System.out.println("0. Exit");
+        System.out.println(
+            "----------MENU--------\n" +
+                "1. printHi\n" +
+                "2. printIncrementVoidWhile(start value, stop value)\n" +
+                "3. printDecrementVoidWhile(start value, stop value)\n" +
+                "4. printSumVoidWhile(start value, stop value)\n" +
+                "5. printIncrementVoidFor(start value, stop value)\n" +
+                "6. printDecrementVoidFor(start value, stop value)\n" +
+                "7. printSumVoidFor(start value, stop value)\n" +
+                "0. Exit"
+        );
     }
 }
